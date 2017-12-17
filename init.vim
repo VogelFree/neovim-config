@@ -29,3 +29,8 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 set path+=** 			" searching in subfolders
 set wildmenu			" show all options for completion with <tab>
 
+" COMMON SETTINGS:
+set number			" show line numbers
+set expandtab			" set spaces instead of tabs
+set shiftwidth=2		" 2 spaces shift width
+set softtabstop=2
