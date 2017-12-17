@@ -1,5 +1,5 @@
 " PLUGINS:
-call plug#begin('C:/Users/vogeldan/AppData/local/nvim/plugged')
+call plug#begin('$XDG_CONFIG_HOME/nvim/plugged')
 	Plug('rakr/vim-one') 			" Atom one colorscheme
 	Plug('tpope/vim-surround')		" surround modifier
 	Plug('tpope/vim-commentary')		" comment modifier
@@ -15,7 +15,7 @@ let g:one_allow_italics=1
 nnoremap <C-F> <ESC>:40vs .<CR>	" open the file browser with ctrl+f 
 
 "  TEMPLATES:
-"nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a	" html template
+nnoremap ,testjs :-1read $XDG_CONFIG_HOME/nvim/templates/.skeleton.test.js<CR>	" js test template
 
 " FILE BROWSING:
 let g:netrw_banner=0		" disable annoying banner
