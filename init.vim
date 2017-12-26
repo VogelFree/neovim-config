@@ -12,7 +12,7 @@ colorscheme one
 let g:one_allow_italics=1
 
 " SHORTCUTS:
-nnoremap <C-F> <ESC>:40vs .<CR>	" open the file browser with ctrl+f 
+nnoremap <C-F> <ESC>:40vs .<CR>	" open the file browser with ctrl+f
 
 "  TEMPLATES:
 nnoremap ,testjs :-1read $XDG_CONFIG_HOME/nvim/templates/.skeleton.test.js<CR>	" js test template
