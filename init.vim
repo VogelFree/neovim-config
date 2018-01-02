@@ -4,6 +4,7 @@ call plug#begin('$XDG_CONFIG_HOME/nvim/plugged')
 	Plug('tpope/vim-surround')		" surround modifier
 	Plug('tpope/vim-commentary')		" comment modifier
 	Plug('christoomey/vim-system-copy')	" copy/paste to/from system clipboard
+        Plug('aklt/plantuml-syntax')            " syntax highlighting and executing for plantuml
 call plug#end()
 
 " COLORSCHEME:
@@ -13,6 +14,7 @@ let g:one_allow_italics=1
 
 " SHORTCUTS:
 nnoremap <C-F> <ESC>:40vs .<CR>	" open the file browser with ctrl+f
+autocmd FileType plantuml nnoremap <F5> :make<cr><esc>:!inkview %:r.svg<cr>
 
 "  TEMPLATES:
 nnoremap ,testjs :-1read $XDG_CONFIG_HOME/nvim/templates/.skeleton.test.js<CR>	" js test template
