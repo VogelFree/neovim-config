@@ -14,7 +14,7 @@ let g:one_allow_italics=1
 
 " SHORTCUTS:
 nnoremap <C-F> <ESC>:40vs .<CR>	" open the file browser with ctrl+f
-autocmd FileType plantuml nnoremap <F5> :make<cr><esc>:!inkview %:r.svg<cr>
+autocmd FileType plantuml nnoremap <F5> <esc>:make<cr><esc>:!inkview %:r.svg&<cr><cr>
 
 "  TEMPLATES:
 nnoremap ,testjs :-1read $XDG_CONFIG_HOME/nvim/templates/.skeleton.test.js<CR>	" js test template
