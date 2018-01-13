@@ -20,6 +20,7 @@ autocmd FileType javascript nnoremap <F6> <esc>:!npm test<cr>
 
 "  TEMPLATES:
 nnoremap ,testjs :-1read $XDG_CONFIG_HOME/nvim/templates/.skeleton.test.js<CR>	" js test template
+nnoremap ,js : -1read $XDG_CONFIG_HOME/nvim/templates/.skeleton.js<CR>          " js template
 
 " FILE BROWSING:
 let g:netrw_banner=0		" disable annoying banner

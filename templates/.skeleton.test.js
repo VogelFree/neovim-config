@@ -1,15 +1,12 @@
-beforeEach( () =>
-{
+beforeEach( () => {
   // Setup
 })
 
-afterEach( () =>
-{
+afterEach( () => {
   // Teardown
 })
 
-test('first test', () =>
-{
+test('first test', () => {
   expect(false).toBe(true)
 })
 
