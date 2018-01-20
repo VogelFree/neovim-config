@@ -5,6 +5,7 @@ call plug#begin('$XDG_CONFIG_HOME/nvim/plugged')
 	Plug('tpope/vim-commentary')		" comment modifier
 	Plug('christoomey/vim-system-copy')	" copy/paste to/from system clipboard
         Plug('aklt/plantuml-syntax')            " syntax highlighting and executing for plantuml
+        Plug('metakirby5/codi.vim')             " interactive code execution
 call plug#end()
 
 " COLORSCHEME:
