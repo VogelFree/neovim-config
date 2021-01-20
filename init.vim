@@ -1,8 +1,18 @@
+" INITIALIZE:
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
 	silent !curl -fLo ~/config/nvim/autoload/plug.vim --create-dirs
 		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
+if !exists('*ReloadVimrc')
+  fun! ReloadVimrc()
+    let save_cursor = getcurpos()
+    source $MYVIMRC
+    call setpos('.', save_cursor)
+  endfun
+endif
+autocmd! BufWritePost $MYVIMRC call ReloadVimrc()
 
 " PLUGINS:
 call plug#begin('~/.config/nvim/plugged')
