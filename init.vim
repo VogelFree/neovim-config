@@ -61,6 +61,9 @@ let g:netrw_liststyle=3		" tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
+" FILE SYNTAX:
+autocmd BufNewFile,BufRead [Vv]agrantfile set syntax=ruby
+
 " FINDING FILES:
 set path+=** 			" searching in subfolders
 set wildmenu			" show all options for completion with <tab>
