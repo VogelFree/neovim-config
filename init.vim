@@ -51,7 +51,22 @@ colorscheme one
 let g:one_allow_italics=1
 
 " SHORTCUTS:
+let mapleader=" "
 
+" Tabs
+nnoremap <leader><Tab> <ESC>:tabnext<Enter>
+nnoremap <C-Tab> <ESC>:tabprev<Enter>
+
+" Windows
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
+
+nnoremap <leader>u :UndotreeShow<CR>
+nnoremap <C-F> <ESC>:40vs .<CR>	" open the file browser with ctrl+f
+nmap <leader>g :G<CR>
+nnoremap <leader>v :e $MYVIMRC<cr>
 
 " FILE BROWSING:
 let g:netrw_banner=0		" disable annoying banner
