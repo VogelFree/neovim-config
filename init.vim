@@ -5,7 +5,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 " PLUGINS:
-call plug#begin('$XDG_CONFIG_HOME/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 	Plug('rakr/vim-one') 			" Atom one colorscheme
 	Plug('tpope/vim-surround')		" surround modifier
 	Plug('tpope/vim-commentary')		" comment modifier
