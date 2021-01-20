@@ -1,1 +1,4 @@
 plugged/
+tmp/
+undodir/
+autoload/
