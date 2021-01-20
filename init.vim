@@ -10,8 +10,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug('tpope/vim-surround')		" surround modifier
 	Plug('tpope/vim-commentary')		" comment modifier
 	Plug('christoomey/vim-system-copy')	" copy/paste to/from system clipboard
-        Plug('aklt/plantuml-syntax')            " syntax highlighting and executing for plantuml
-        Plug('metakirby5/codi.vim')             " interactive code execution
+	Plug('mbbill/undotree')			" Treeview of the undo history
 call plug#end()
 
 " COLORSCHEME:
