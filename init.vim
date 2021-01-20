@@ -13,6 +13,28 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug('mbbill/undotree')			" Treeview of the undo history
 call plug#end()
 
+" COMMON SETTINGS:
+filetype plugin on
+filetype indent on
+
+syntax on
+set hidden
+set number
+set relativenumber
+set expandtab
+set shiftwidth=2 tabstop=2 softtabstop=2
+set foldmethod=syntax
+set nofoldenable
+set directory^=~/.config/nvim/tmp/
+set autochdir
+set noerrorbells
+set undodir=~/.config/nvim/undodir
+set undofile
+set nowrap
+set colorcolumn=80
+set encoding=utf-8
+set fileencoding=utf-8
+highlight ColorColumn ctermbg=0 guibg=lightgrey
 " COLORSCHEME:
 set background=dark
 colorscheme one
@@ -42,9 +64,3 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " FINDING FILES:
 set path+=** 			" searching in subfolders
 set wildmenu			" show all options for completion with <tab>
-
-" COMMON SETTINGS:
-set number			" show line numbers
-set expandtab			" set spaces instead of tabs
-set shiftwidth=2		" 2 spaces shift width
-set softtabstop=2
