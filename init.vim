@@ -16,11 +16,12 @@ autocmd! BufWritePost $MYVIMRC call ReloadVimrc()
 
 " PLUGINS:
 call plug#begin('~/.config/nvim/plugged')
-	Plug('rakr/vim-one') 			" Atom one colorscheme
-	Plug('tpope/vim-surround')		" surround modifier
-	Plug('tpope/vim-commentary')		" comment modifier
-	Plug('christoomey/vim-system-copy')	" copy/paste to/from system clipboard
-	Plug('mbbill/undotree')			" Treeview of the undo history
+  Plug('rakr/vim-one') 			" Atom one colorscheme
+  Plug('tpope/vim-surround')		" surround modifier
+  Plug('tpope/vim-commentary')		" comment modifier
+  Plug('christoomey/vim-system-copy')	" copy/paste to/from system clipboard
+  Plug('mbbill/undotree')			" Treeview of the undo history
+  Plug('tpope/vim-fugitive')        " git plugin to use git from vim
 call plug#end()
 
 " COMMON SETTINGS:
@@ -45,6 +46,7 @@ set colorcolumn=80
 set encoding=utf-8
 set fileencoding=utf-8
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+
 " COLORSCHEME:
 set background=dark
 colorscheme one
