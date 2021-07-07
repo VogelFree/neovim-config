@@ -22,8 +22,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug('christoomey/vim-system-copy')	" copy/paste to/from system clipboard
   Plug('mbbill/undotree')			" Treeview of the undo history
   Plug('tpope/vim-fugitive')        " git plugin to use git from vim
-  Plug('autozimu/LanguageClient-neovim')
-  Plug('ionide/ionide-vim')
+  Plug('autozimu/LanguageClient-neovim') " Language server client
+  Plug('ionide/ionide-vim') " F# Support
 call plug#end()
 
 " COMMON SETTINGS:
