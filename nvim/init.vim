@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug('tpope/vim-fugitive')        " git plugin to use git from vim
   Plug('autozimu/LanguageClient-neovim') " Language server client
   Plug('ionide/ionide-vim') " F# Support
+  Plug('Yggdroot/indentLine') " indention line
 call plug#end()
 
 " COMMON SETTINGS:
