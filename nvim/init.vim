@@ -22,10 +22,10 @@ call plug#begin('~/.config/nvim/plugged')
   Plug('christoomey/vim-system-copy')	" copy/paste to/from system clipboard
   Plug('mbbill/undotree')			" Treeview of the undo history
   Plug('tpope/vim-fugitive')        " git plugin to use git from vim
-  Plug('autozimu/LanguageClient-neovim') " Language server client
-  Plug('ionide/ionide-vim') " F# Support
   Plug('Yggdroot/indentLine') " indention line
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-fsharp']
 
 " COMMON SETTINGS:
 filetype plugin on
