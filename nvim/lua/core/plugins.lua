@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
   use "windwp/nvim-autopairs"
   use "sainnhe/everforest"
   use "nvim-lualine/lualine.nvim"
+  use "nvim-treesitter/nvim-treesitter"
   use {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
