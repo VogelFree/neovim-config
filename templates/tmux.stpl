@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Set session name
+SESSION="${1:session}"
+WORKSPACE="${2:workspace}"
+
+SESSIONEXISTS=\$(tmux list-sessions | grep \$session)
+if [ "\$SESSIONEXISTS" = "" ]
+then
+    tmux new-session -d -s \$SESSION
+
+    #Shell window
+    tmux rename-window -t 1 'Shell'
+    tmux send-keys -t 'Shell' \\
+        "cd \$WORKSPACE" C-m \\
+        "clear" C-m
+
+    tmux new-window -t \$SESSION:2 -n 'Git'
+    tmux send-keys -t 'Git' \\
+        "cd \$WORKSPACE" C-m \\
+        "clear" C-m \\
+        "lazygit" C-m
+
+    tmux new-window -t \$SESSION:3 -n 'Coding'
+    tmux send-keys -t 'Coding' \\
+        "cd \$WORKSPACE" C-m \\
+        "clear" C-m \\
+        "nvim ." C-m
+fi
+
+tmux attach-session -t \$SESSION
